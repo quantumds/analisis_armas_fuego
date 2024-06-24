@@ -50,6 +50,15 @@ Una vez habiendo seguido todos estos pasos, simplemente ejecutamos el fichero ma
 python main.py
 ```
 
+### Tests con `unittest`
+Para testear los diferentes unit tests que hemos hecho simplemente ejecutamos desde la raiz de nuestro proyecto:
+```
+pytest nombre_del_script_de_test.py
+```
+
+En caso de que obtengamos una señal en verde por la terminal, significa que todo se enuentra bien. En caso de que la terminal nos enseñe error en rojo, nuestras funciones no han pasado los unit tests.
+
+
 ### Licencia
 
 Hemos escogido la licencia MIT pues es una excelente opción para un proyecto Python universitario que deseamos sea código libre.
