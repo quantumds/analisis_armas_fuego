@@ -15,9 +15,9 @@ def evolucion_temporal(df: pd.DataFrame) -> None:
     df_anual = df.groupby('year').sum().reset_index()
     plt.ion()  # Activamos el modo interactivo
     plt.figure(figsize=(10, 6))
-    plt.plot(df_anual['year'], df_anual['permit'], label='Permits')
-    plt.plot(df_anual['year'], df_anual['handgun'], label='Handguns')
-    plt.plot(df_anual['year'], df_anual['long_gun'], label='Long guns')
+    plt.plot(df_anual['year'], df_anual['permit'], label='Permisos')
+    plt.plot(df_anual['year'], df_anual['handgun'], label='Pistolas')
+    plt.plot(df_anual['year'], df_anual['long_gun'], label='Rifles de Asalto')
     plt.xlabel('Año')
     plt.ylabel('Recuentos')
     plt.legend()

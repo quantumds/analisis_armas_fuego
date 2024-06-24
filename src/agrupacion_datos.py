@@ -26,7 +26,7 @@ def print_biggest_handguns(df: pd.DataFrame) -> None:
         None
     """
     max_row = df.loc[df['handgun'].idxmax()]
-    print(f"Estado: {max_row['state']}, Año: {max_row['year']}, Pistolas: {max_row['handgun']}")
+    print(f"Estado: {max_row['state']}, Año: {max_row['year']}, Pistolas: {int(max_row['handgun'])}")
 
 
 def print_biggest_longguns(df: pd.DataFrame) -> None:
@@ -40,4 +40,4 @@ def print_biggest_longguns(df: pd.DataFrame) -> None:
         None
     """
     max_row = df.loc[df['long_gun'].idxmax()]
-    print(f"Estado: {max_row['state']}, Año: {max_row['year']}, Armas Largas: {max_row['long_gun']}")
+    print(f"Estado: {max_row['state']}, Año: {max_row['year']}, Armas Largas: {int(max_row['long_gun'])}")
